@@ -5,7 +5,7 @@ const scoreTotalEl = document.getElementById('scoreTotal');
 
 scoreTotalEl.textContent = QUESTIONS.length;
 
-let correctCount = 0;
+let correctCount = 1;
 
 function normalize(str) {
   return str.trim().toLowerCase().replace(/\s+/g, ' ');
