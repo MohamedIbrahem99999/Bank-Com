@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Versant Practice — Fill in the Blank</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-left">
+      <span class="brand-mark">VP</span>
+      <div class="brand-text">
+        <h1>Versant Practice</h1>
+        <p>Complete the sentence with the correct word</p>
+      </div>
+    </div>
+    <div class="header-right">
+      <button id="shuffleBtn" class="shuffle-btn" type="button">Shuffle: Off</button>
+      <div class="score-box">
+        <span class="score-num" id="scoreNum">0</span>
+        <span class="score-slash">/</span>
+        <span class="score-total" id="scoreTotal">114</span>
+        <span class="score-label">correct</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <main class="quiz-list" id="quizList">
+      <!-- questions injected by script.js -->
+    </main>
+
+    <aside class="translate-panel">
+      <div class="translate-inner">
+        <h2 class="translate-title">Translate <span class="ar">ترجمة</span></h2>
+        <p class="translate-hint">Type any English text below</p>
+        <textarea id="translateInput" class="translate-input" rows="4" placeholder="Type English here..."></textarea>
+        <button id="translateBtn" class="translate-btn">Translate</button>
+        <div class="translate-result-wrap">
+          <p class="translate-result-label">الترجمة</p>
+          <p id="translateResult" class="translate-result">—</p>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer class="site-footer">
+    <p>114 questions · answers checked as you type · translations by MyMemory API</p>
+  </footer>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
